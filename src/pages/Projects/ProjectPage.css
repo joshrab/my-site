@@ -1,0 +1,111 @@
+/* src/pages/Projects/ProjectPage.css */
+
+.project-container {
+    max-width: 64rem;
+    margin: 0 auto;
+    padding: 2rem;
+  }
+  
+  .project-item {
+    display: block;
+    width: 100%;
+    background: rgba(180, 197, 228, 0.15);
+    backdrop-filter: blur(8px);
+    padding: 2.5rem;
+    border-radius: 16px;
+    border: 1px solid rgba(180, 197, 228, 0.3);
+    transition: all 0.3s ease;
+    text-decoration: none;
+    box-shadow: 0 4px 15px rgba(107, 119, 176, 0.1);
+    margin-bottom: 2rem;
+  }
+  
+  .project-item:hover {
+    background: rgba(180, 197, 228, 0.25);
+    transform: translateY(-2px);
+    box-shadow: 0 8px 20px rgba(107, 119, 176, 0.15);
+    border-color: rgba(180, 197, 228, 0.4);
+  }
+  
+  .project-content {
+    display: grid;
+    grid-template-columns: 240px 1fr;
+    gap: 2rem;
+    align-items: start;
+  }
+  
+  .image-container {
+    width: 100%;
+    height: 160px;
+    border-radius: 8px;
+    overflow: hidden;
+    border: 1px solid rgba(180, 197, 228, 0.3);
+  }
+  
+  .project-image {
+    width: 100%;
+    height: 100%;
+    object-fit: cover;
+  }
+  
+  .project-details {
+    display: flex;
+    flex-direction: column;
+    gap: 0.75rem;
+  }
+  
+  .project-title {
+    font-size: 1.75rem;
+    font-weight: bold;
+    color: #6B77B0;
+    margin: 0 0 0.75rem 0;
+    letter-spacing: 0.5px;
+  }
+  
+  .project-date {
+    font-size: 0.875rem;
+    color: #8E9FD3;
+    margin: 0;
+  }
+  
+  .project-description {
+    color: #7C87B5;
+    font-size: 1.1rem;
+    line-height: 1.5;
+    margin: 0 0 1rem 0;
+  }
+  
+  .tech-stack {
+    display: flex;
+    flex-wrap: wrap;
+    gap: 0.75rem;
+  }
+  
+  .tech-tag {
+    font-size: 0.875rem;
+    padding: 0.4rem 1rem;
+    background: rgba(180, 197, 228, 0.2);
+    border: 1px solid rgba(180, 197, 228, 0.4);
+    border-radius: 9999px;
+    color: #6B77B0;
+    transition: all 0.2s ease;
+  }
+  
+  .tech-tag:hover {
+    background: rgba(180, 197, 228, 0.3);
+    transform: translateY(-1px);
+  }
+  
+  @media (max-width: 768px) {
+    .project-content {
+      grid-template-columns: 1fr;
+    }
+  
+    .image-container {
+      height: 200px;
+    }
+    
+    .project-item {
+      padding: 1.5rem;
+    }
+  }

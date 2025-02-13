@@ -1,0 +1,30 @@
+/* Header.css */
+.header-container {
+    width: 100vw; /* Full width */
+    color: #e5e5e5; /* Light gray for contrast */
+    display: flex;
+    justify-content: end;
+    align-items: center;
+    padding: 1rem 2rem;
+    position: fixed; /* Keeps it at the top */
+    top: 0;
+    left: 0;
+    z-index: 50;
+    /* border-bottom: .5px solid rgba(255, 255, 255, 0.2); */
+  }
+  
+  .header-nav {
+    display: flex;
+    align-items: center;
+    gap: 1.5rem;
+  }
+  
+  .header-icon {
+    color: #a0a0a0; /* Slightly lighter gray */
+    transition: color 0.3s ease;
+  }
+  
+  .header-icon:hover {
+    color: white;
+  }
+  
